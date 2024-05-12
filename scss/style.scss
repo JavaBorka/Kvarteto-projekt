@@ -1,0 +1,82 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+$c-font: #000000;
+$c-red-primary: #CD104D;
+
+
+
+body {
+    font-family: Montserrat;
+    color: $c-font;
+    margin: 20px 30px 0 30px;
+    position: relative;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    // line-height: 0.3;
+    background-color: rgb(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    &__logo {
+        padding: 10px 10px 10px 30px;
+    }
+
+    &__flags {
+        padding: 10px;
+    }
+}
+
+// funkčně je to stejné jako display: none, ale tento příkaz by mohl způsobit, že některé prohlížeče ho nezobrazí vůbec, tak radši nepoužíváme
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__toggler {
+    cursor: pointer;
+
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: none; //menu list je standardně schovaný
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media screen and (min-width: 800px) {
+        display: flex !important;
+    }
+}
+
+.menu__link {
+    display: block; //řádkový prvek změním na blokový, abych mohla klikat na celý řádek, ne jenom na text
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    // color: $c-red-primary;
+    // border-bottom: 1px solid $c-red-primary;
+    color: white;
+    background-color: $c-red-primary;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+    display: block;
+}
