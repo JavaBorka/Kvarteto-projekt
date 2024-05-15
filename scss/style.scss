@@ -284,8 +284,8 @@ h1::after {
 }
 
 .about-us__logo {
-    width: 180px;
-    margin: 30px auto 30px auto;
+    width: 140px;
+    margin: 10px auto 25px auto;
 }
 
 .about-us__logo-img {
@@ -302,8 +302,8 @@ h1::after {
     margin: 0;
 }
 
-.artists {
-    padding: 25px 30px 25px 25px;
+.artists__align {
+    padding: 0 30px 0 30px;
 }
 
 .card {
@@ -419,10 +419,13 @@ h1::after {
 }
 
 .partners {
-    padding: 0 30px 0 30px;
     &__content {
         text-align: center;
     }
+}
+
+.partners__align {
+    padding: 0 30px 0 30px;
 }
 
 .partners__content {
@@ -434,7 +437,7 @@ h1::after {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px;
     gap: 14px;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
 }
 
 .partners__logo {
@@ -450,6 +453,44 @@ h1::after {
 .partners__logo-center {
     margin: 32px auto 32px auto;
     width: 160px;
+}
+
+
+.partners__contacts {
+    padding: 0 30px 0 30px;
+}
+
+.partners__contact-section {
+    padding: 10px;
+}
+
+.partners__contact-section--border {
+    border-bottom: 0.5px solid $c-font;
+    border-top: 0.5px solid $c-font;
+}
+
+.partners__header-h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.partners__icon-size {
+    width: 45px;
+    margin: 20px auto 20px auto;
+    // border-bottom: 0.9px solid $c-font;
+}
+
+.partners__contacts-icon {
+    max-width: 100%;
+}
+
+.partners__form-align {
+    width: 250px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto 0 auto;
 }
 
 .footer {
