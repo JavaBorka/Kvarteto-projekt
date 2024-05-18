@@ -15,7 +15,11 @@
     <section class="hero">
 
         <div class="hero__banner">
-            <img class="hero__image" src="./images/1024x768.jpg" alt="St Elizabeth Church">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/1440x825.jpg">
+                <source media="(max-width: 450px)" srcset="./images/1024x768.jpg">
+                <img class="hero__image" src="./images/1024x768.jpg" alt="St Elizabeth Church">
+            </picture>
         </div>
 
         <div class="hero__position">
@@ -31,7 +35,7 @@
             </div>
             <div class="hero__button-position">
                 <nav class="button">
-                    <a class="button__link  button__link--icon" href="#">Prehrať najnovší diel</a>
+                    <a class="button__link  button__link--icon" href="https://www.ceskatelevize.cz/porady/1098260856-kvarteto/424235100111001/">Prehrať najnovší diel</a>
                     <div class="button-icon-size">
                         <img class="button__icon" src="/images/play_icon_plna.svg" alt="play icon">
                     </div>
@@ -41,43 +45,49 @@
 
         <header class="header">
 
-            <div class="header__right">
+            <div class="header__logo-position">
                 <img class="header__logo" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto">
             </div>
-            <!-- <div class="header__flags">
-                <img class="header__image-flag-en" src="/images/united kingdom.svg" alt="flag of England">
-            </div> -->
 
-            <div class="header__left">
+            <div class="header__menu-position">
                 <nav class="menu">
                     <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
 
                     <label for="menu-checkbox" class="menu__toggler">☰</label>
 
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Domov</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">O nás</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Tvorcovia</a></li>
-                        <!-- <li class="menu__item"><a class="menu__link" href="#">Archív</a></li> -->
-                        <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#home">Domov</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">O nás</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#artists">Tvorcovia</a></li>
+                        <!-- <li class="menu__item"><a class="menu__link" href="#archive">Archív</a></li> -->
+                        <li class="menu__item"><a class="menu__link" href="#contact">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>        
+        </header>
+
+        <div class="flags">
+            <a href="#"><img class="flags__image-flag-cz" src="images/czech republic.svg" alt="flag of Czech Republic"></a>
+            <a href="#"><img class="flags__image-flag-sk" src="images/slovakia.svg" alt="flag of Slovak Republic"></a>
+            <a href="#"><img class="flags__image-flag-pl" src="images/poland.svg" alt="flag of Poland"></a>
+            <a href="#"><img class="flags__image-flag-hu" src="images/hungary.svg" alt="flag of Hungary"></a>
+            <a href="#"><img class="flags__image-flag-en" src="/images/united kingdom.svg" alt="flag of England"></a>
+        </div>
+
     </section>
 
     <section class="visegrad-section">
-        <div class="visegrad-section__top">
-            <img class="visegrad-section__logo" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund">
+        <div class="visegrad-section__logo">
+            <img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund">
         </div>
-        <div class="visegrad-section__bottom">
-            The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span>here</span>.
+        <div class="visegrad-section__content">
+            The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span><a href="#">here</a></span>.
         </div>
     </section>
 
     <section class="about-us">
-        <h1>O nás</h1>
-        <div class="about-us__color">
+        <h1 class="heading-primary" id="about">O nás</h1>
+        <div class="about-us__position">
             <p>
                 Počas existencie KVARTETA bolo odvysielaných takmer 230 premiérových častí. Približne 900 reportáží dokázalo v každej zo 4 susediacich krajín osloviť milióny divákov. Témy zo života obyčajných ľudí, úspechy, problémy a ich riešenia, hospodárstvo, vzdelávanie, veda, kultúra, história, ekológia, šport či zaujímavé prírodné a turistické miesta majú univerzálny, nadčasový a európsky charakter. 
             </p>
@@ -101,7 +111,7 @@
                 V konečnom dôsledku potvrdila opodstatnenosť tejto relácie aj samotná Vyšehradská cena udeľovaná ministrami kultúry krajín V4. Televízny program všetkých štyroch krajín bol ocenený po prvýkrát.
             </p>
 
-            <p>
+            <p class="about-us__sentence-center">
                 Štyri rôzne ľubozvučné jazyky v tomto KVARTETE ladia dokonale a snáď ešte dlho budú.  
             </p>
         </div>
@@ -111,7 +121,7 @@
     </section>
 
     <section class="artists">
-        <h1>Tvorcovia</h1>
+        <h1 class="heading-primary" id="artists">Tvorcovia</h1>
         <div class="artists__align">
             <div class="card">
                 <div class="card__foto">
@@ -120,25 +130,9 @@
                 <!-- <div class="card__logo">
                     <img class="card__svg" src="/images/vlajka.svg" alt="logo TV">
                 </div> -->
-                <div class="card__right">
+                <div class="card__content">
                     <p class="card__header">Ľuba Koľová</p>
-                    <p class="card__content">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
-                    <nav class="button">
-                        <a class="button__link" href="#">Kontaktovať</a>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__foto">
-                    <img class="card__img" src="/images/artist.jpg" alt="foto Ľuba Koľová">
-                </div>
-                <!-- <div class="card__logo">
-                    <img class="card__svg" src="/images/vlajka.svg" alt="logo TV">
-                </div> -->
-                <div class="card__right">
-                    <p class="card__header">Ľuba Koľová</p>
-                    <p class="card__content">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
+                    <p class="card__content-size">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
                     <nav class="button">
                         <a class="button__link button__link--light" href="#">Kontaktovať</a>
                     </nav>
@@ -152,11 +146,11 @@
                 <!-- <div class="card__logo">
                     <img class="card__svg" src="/images/vlajka.svg" alt="logo TV">
                 </div> -->
-                <div class="card__right">
+                <div class="card__content">
                     <p class="card__header">Ľuba Koľová</p>
-                    <p class="card__content">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
+                    <p class="card__content-size">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
                     <nav class="button">
-                        <a class="button__link" href="#">Kontaktovať</a>
+                        <a class="button__link button__link--light" href="#">Kontaktovať</a>
                     </nav>
                 </div>
             </div>
@@ -168,32 +162,42 @@
                 <!-- <div class="card__logo">
                     <img class="card__svg" src="/images/vlajka.svg" alt="logo TV">
                 </div> -->
-                <div class="card__right">
+                <div class="card__content">
                     <p class="card__header">Ľuba Koľová</p>
-                    <p class="card__content">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
+                    <p class="card__content-size">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
                     <nav class="button">
-                        <a class="button__link" href="#">Kontaktovať</a>
+                        <a class="button__link button__link--light" href="#">Kontaktovať</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__foto">
+                    <img class="card__img" src="/images/artist.jpg" alt="foto Ľuba Koľová">
+                </div>
+                <!-- <div class="card__logo">
+                    <img class="card__svg" src="/images/vlajka.svg" alt="logo TV">
+                </div> -->
+                <div class="card__content">
+                    <p class="card__header">Ľuba Koľová</p>
+                    <p class="card__content-size">Novinárka, redaktorka spravodajstva a šéfredaktorka Redakcie dokumentárnej tvorby.</p>
+                    <nav class="button">
+                        <a class="button__link button__link--light" href="#">Kontaktovať</a>
                     </nav>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="button-align">
-            <nav class="button">
-                <a class="button__link" href="#">Ďalší tvorcovia</a>
-            </nav>
-        </div> -->
-
     </section>
 
     <section class="partners">
-        <h1>Partneri</h1>
+        <h1 class="heading-primary" id="contact">Partneri</h1>
         <div class="partners__align">
             <p class="partners__content">Ďakujeme všetkým partnerom na Slovensku, v Česku, Poľsku a Maďarsku, bez ktorých by Kvarteto nebolo také, aké je.</p>
             <div class="partners__logo-grid">
                 <img class="partners__logo" src="/images/Ceska_televize.svg" alt="logo of Ceska Televize TV">
-                <img class="partners__logo" src="/images/Duna_logo_2012.png" alt="logo of Duna TV">
-                <img class="partners__logo partners__logo--small " src="/images/RTV.svg" alt="logo of RTVS TV">
+                <img class="partners__logo partners__logo--small" src="/images/Duna_logo_2012.png" alt="logo of Duna TV">
+                <img class="partners__logo partners__logo--small" src="/images/RTV.svg" alt="logo of RTVS TV">
                 <img class="partners__logo partners__logo--small" src="/images/TVP.svg" alt="logo of TVP TV">
             </div>
             <p class="partners__content">Za podpory</p>
@@ -201,25 +205,27 @@
                 <img class="partners__logo" src="/images/visegrad_fund_blue.svg" alt="logo of Visegrad Fund">
             </div>
         </div>
-    </section>
-
-    <div class="partners__contacts">
-        <div class="partners__contact-section partners__contact-section--border">
-            <h2 class="partners__header-h2">Kvarteto na sociálnych sieťach</h2>
-            <div class="partners__icon-size">
-                <img class="partners__contacts-icon" src="/images/facebook.svg" alt="facebook icon">
-            </div>
-        </div>
-        <div class="partners__contact-section">
-            <h2 class="partners__header-h2">Napíšte nám</h2>
-            <div class="partners__form-align">
+    
+        <div class="partners__contacts">
+            <div class="partners__contact-section partners__contact-section--border">
+                <h2 class="partners__header-h2">Kvarteto na sociálnych sieťach</h2>
                 <div class="partners__icon-size">
-                    <img class="partners__contacts-icon" src="/images/kontakt.svg" alt="facebook icon">
+                    <img class="partners__contacts-icon" src="/images/facebook.svg" alt="facebook icon">
                 </div>
-                <div>Otvoriť kontaktný formulár</div>
+            </div>
+            <div class="partners__contact-section">
+                <div class="partners__header-align">
+                    <h2 class="partners__header-h2">Napíšte nám</h2>
+                </div>
+                <div class="partners__form-align">
+                    <div class="partners__icon-size">
+                        <img class="partners__contacts-icon" src="/images/kontakt.svg" alt="facebook icon">
+                    </div>
+                    <div>Otvoriť kontaktný formulár</div>
+                </div>
             </div>
         </div>
-   </div>
+    </section>
 
     <footer class="footer">
         <p class="footer__content">Copyright © 2024 KVARTETO | All rights reserved.</p>

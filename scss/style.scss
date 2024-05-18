@@ -14,12 +14,18 @@ $font-medium: 500;
 $font-black: 900;
 $font-bold: 700;
 $font-semiBold: 600;
+$font-extraBold: 700;
 
 body {
     font-family: Montserrat;
     font-size: 14px;
+    line-height: 1.5;
     color: $c-font;
     margin: 0;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 
 .hero {
@@ -48,7 +54,7 @@ body {
         display: flex;
         flex-direction: column;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             position: absolute;
             right: 130px;
             top: 250px;
@@ -65,7 +71,7 @@ body {
         padding: 5px 10px;
         display: inline-block;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             font-size: 30px;
             background-color: $c-blue-primary;
             color: $c-hero-header;
@@ -82,7 +88,7 @@ body {
         font-weight: $font-black;
         text-align: right;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             font-size: 75px;
             color: $c-hero-header;
             font-weight: $font-black;
@@ -97,14 +103,13 @@ body {
         display: inline-block;
         padding: 6px 10px;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             font-size: 30px;
             font-weight: $font-bold;
             background-color: $c-dark-blue;
             color: $c-white;
             display: inline-block;
             padding: 6px 10px;
-            margin-top: 15px;
         }
     }
 
@@ -114,16 +119,21 @@ body {
         align-items: flex-end;
         gap: 7px;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 15px;
+            gap: 7px;
         }
     }
 
     &__logo {
         width: 50px;
+
+        @media screen and (min-width: 1200px) {
+            width: 100px;
+            margin-top: 10px;
+        }
     }
 
     &__image-logo {
@@ -155,20 +165,37 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     background-color: rgb(255, 255, 255, 0.7);
-    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     
-    &__left {
+    padding: 20px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        left: 0;
+        top: 60px;
+    }
+    
+    &__menu-position {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // padding-left: 20px;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-end;
+        }
     }
 
-    &__right {
+    &__logo-position {
         position: absolute;
         width: 150px;
         top: 20px;
         right: 20px;
+
+        @media screen and (min-width: 1200px) {
+            top: 18px;
+            left: 130px;
+            width: 230px;
+        }
     }
 
     &__logo {
@@ -177,6 +204,11 @@ body {
 }
 
 .menu {
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 130px;
+    }
+
     &__checkbox {
         position: absolute;
         left: -9999px; // funkčně je to stejné jako display: none, ale tento příkaz by mohl způsobit, že některé prohlížeče ho nezobrazí vůbec, tak radši nepoužíváme
@@ -185,7 +217,7 @@ body {
     &__toggler {
         cursor: pointer;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             display: none;
         }
     }
@@ -196,7 +228,7 @@ body {
         padding: 0;
         list-style: none;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1200px) {
             display: flex !important;
         }
     }
@@ -207,6 +239,12 @@ body {
         padding: 13px;
         text-decoration: none;
         text-align: center;
+        color: $c-font;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 18px;
+            padding: 25px;
+        }
     }
 
     &__link:hover {
@@ -221,6 +259,19 @@ body {
     }
 }
 
+.flags {
+    position: absolute;
+    right: 9999px;
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 20px;
+        right: 130px;
+        display: flex;
+        gap: 10px;
+    }
+}
+
 .visegrad-section {
     font-size: 12px;
     display: flex;
@@ -231,266 +282,409 @@ body {
     text-align: left;
     font-style: italic;
     margin: 15px 0;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px 130px 30px;
+        font-size: 16px;
+        gap: 35px;
+    }
+
+
+    &__content {
+        padding: 0 30px 0 30px;
+        text-align: justify;
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: 85%;
+            padding: 0;
+        }
+    }
+
+    &__content span {
+        color: $c-red-primary;
+        // cursor: pointer;
+    }
+
+    &__content span:hover {
+        font-weight: $font-semiBold;
+    }
+
+    &__logo {
+        width: 100px;
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: 15%;
+        }
+    }
+
+    &__logo-img {
+        width: 100%;
+    }
 }
 
-.visegrad-section__bottom {
-    padding: 0 30px 0 30px;
-    text-align: justify;
-}
-
-.visegrad-section__bottom span {
-    color: $c-red-primary;
-    cursor: pointer;
-}
-
-.visegrad-section__top {
-    width: 100px;
-}
-
-.visegrad-section__logo {
-    width: 100%;
-}
-
-h1 {
+.heading-primary {
     font-size: 23px;
     text-transform: uppercase;
     text-align: center;
     padding: 30px;
     margin: 0;
-}
 
-// cerná čára
+    @media screen and (min-width: 1200px) {
+        font-size: 40px;
+        font-weight: $font-extraBold;
+        padding: 60px 130px;
+    }
 
-h1::after {
-	content: '';
-	display: block;
-	height: 30px;
-	background:
-		url(/images/bodky.svg) no-repeat top left/auto 10px,
-		url(/images/bodky.svg) no-repeat bottom right/auto 10px,
-		linear-gradient(to top, transparent, transparent 49%, black 49%, black 51%, transparent 51%, transparent);
-    margin: 0;
+    &::after {
+        content: '';
+        display: block;
+        height: 30px;
+        background:
+            url(/images/bodky.svg) no-repeat top left/auto 10px,
+            url(/images/bodky.svg) no-repeat bottom right/auto 10px,
+            linear-gradient(to top, transparent, transparent 49%, black 49%, black 51%, transparent 51%, transparent);
+        margin: 0;
+
+        @media screen and (min-width: 1200px) {
+            height: 43px;
+            background:
+                url(/images/bodky.svg) no-repeat top left/auto 15px,
+                url(/images/bodky.svg) no-repeat bottom right/auto 15px,
+                linear-gradient(to top, transparent, transparent 49%, black 49%, black 51%, transparent 51%, transparent);
+        }
+    }
 }
 
 .about-us {
     margin: 0;
     text-align: justify;
+
+    &__img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; 
+
+        @media screen and (min-width: 1200px) {
+            padding: 0 220px;
+            height: 520px;
+            margin: 15px 0 15px 0;
+        }
+    }
+
+    &__logo {
+        width: 140px;
+        margin: 10px auto 25px auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 200px;
+            margin: 40px auto 80px auto;
+        }
+    }
+
+    &__logo-img {
+        width: 100%;
+    }
+
+    // Podbarvení textu na modro
+    // .about-us__bckgrnd {
+    //     background-color: rgb(83, 92, 145, 0.3);
+    // }
+
+    &__position p {
+        padding: 15px 30px;
+        margin: 0;
+
+        @media screen and (min-width: 1200px) {
+            padding: 15px 330px;
+        }
+    }
+
+    &__sentence-center {
+        text-align: center;
+    }
 }
 
-.about-us__img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+.artists {
 
-.about-us__logo {
-    width: 140px;
-    margin: 10px auto 25px auto;
-}
+    &__align {
+        padding: 0 30px 0 30px;
 
-.about-us__logo-img {
-    width: 100%;
-}
-
-// Podbarvení textu na modro
-// .about-us__bckgrnd {
-//     background-color: rgb(83, 92, 145, 0.3);
-// }
-
-.about-us__color p {
-    padding: 15px 30px;
-    margin: 0;
-}
-
-.artists__align {
-    padding: 0 30px 0 30px;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 130px 0 130px;
+        }
+    }
 }
 
 .card {
     width: 100%;
-    background-color: $c-card;
+    // background-color: $c-card;
+    background-color: $c-white;
+    border: 0.7px solid rgb(233, 230, 230);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-}
+    gap: 25px;
 
-.card:hover {
-    background-color: rgb(83, 92, 145, 0.3);
-}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
 
-.card__foto {
-    flex-basis: 40%;
-    position: relative;
-}
+    &:hover {
+        background-color: rgb(83, 92, 145, 0.3);
+    }
 
-.card__right {
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    &__foto {
+        flex-basis: 40%;
+        position: relative;
+    }
 
-.card__header {
-    font-size: 17px;
-    font-weight: $font-bold;
-    margin: 0;
-    padding-top: 10px;
-}
+    &__content {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-.card__content {
-    font-size: 14px;
+        @media screen and (min-width: 1200px) {
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+    }
+
+    &__header {
+        font-size: 17px;
+        font-weight: $font-bold;
+        margin: 0;
+        padding-top: 10px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+        }
+
+    }
+
+    &__content-size {
+        font-size: 14px;
+    }
+
+    &__img {
+        max-width: 100%;
+        border-radius: 70%;
+        // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    // .card__logo {
+    //     position: absolute;
+    //     top: -75px;
+    //     right: -75px;
+    // }
+
+    &__svg {
+        max-width: 100%;
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+    }
 }
 
 .button {
     display: block;
     position: relative;
-}
 
-.button__link {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 5px;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-weight: $font-semiBold;
-    text-align: center;
-    border-radius: 20px;
-    background-color: $c-red-primary;
-    color: $c-white;
-}
+    &__link {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: $font-semiBold;
+        text-align: center;
+        border-radius: 20px;
+        background-color: $c-red-primary;
+        color: $c-white;
 
-.button__link:hover {
-    background-color: $c-red-primary;
-    color: $c-white;
-}
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+    }
 
-.button__link--light {
-    background-color: $c-hero-header;
-    color: $c-font;
-}
+    &__link:hover {
+        background-color: rgb(178, 20, 70);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        color: $c-white;
+    }
 
-.button__link--light:hover {
-    background-color: $c-red-primary;
-    color: $c-white;
-}
+    &__link--light {
+        background-color: rgb(242, 240, 240);
+        color: $c-font;
+    }
 
-.button__link--icon {
-    font-size: 14px;
-    padding: 5px 15px 5px 40px;
-}
+    &__link--light:hover {
+        background-color: $c-red-primary;
+        color: $c-white;
+    }
 
-.button-icon-size {
-    width: 12px;
-}
+    &__link--icon {
+        font-size: 14px;
+        padding: 5px 15px 5px 40px;
 
-.button__icon {
-    width: 100%;
-    position: relative;
-    left: 17px;
-    bottom: 25px;
-}
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            padding: 8px 20px 8px 48px;
+        }
+    }
 
-.button-align {
-    display: flex;
-    justify-content: center;
-}
+    &-icon-size {
+        width: 12px;
 
-.card__img {
-    max-width: 100%;
-    border-radius: 70%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
+        @media screen and (min-width: 1200px) {
+            width: 14px;
+        }
+    }
 
-// .card__logo {
-//     position: absolute;
-//     top: -75px;
-//     right: -75px;
-// }
+    &__icon {
+        width: 100%;
+        position: relative;
+        left: 17px;
+        bottom: 25px;
 
-.card__svg {
-    max-width: 100%;
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            left: 22px;
+            bottom: 29px;
+        }
+    }
 }
 
 .partners {
     &__content {
         text-align: center;
     }
-}
 
-.partners__align {
-    padding: 0 30px 0 30px;
-}
+    &__align {
+        padding: 0 30px 0 30px;
 
-.partners__content {
-    margin-top: 0;
-}
+        @media screen and (min-width: 1200px) {
+            padding: 0 130px 0 130px;
+        }
 
-.partners__logo-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 14px;
-    padding: 20px;
-}
+    }
 
-.partners__logo {
-    max-width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+    &__content {
+        margin-top: 0;
+    }
 
-.partners__logo--small {
-    padding: 17px;
-}
+    &__logo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 14px;
+        padding: 20px;
 
-.partners__logo-center {
-    margin: 32px auto 32px auto;
-    width: 160px;
-}
+        @media screen and (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 140px;
+        }
+
+    }
+
+    &__logo {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__logo--small {
+        padding: 17px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 25px;
+        }
+    }
+
+    &__logo-center {
+        margin: 32px auto 32px auto;
+        width: 160px;
+
+        @media screen and (min-width: 1200px) {
+            width: 230px;
+            margin: 60px auto 60px auto;
+        }
+    }
 
 
-.partners__contacts {
-    padding: 0 30px 0 30px;
-}
+    &__contacts {
+        padding: 0 30px 0 30px;
 
-.partners__contact-section {
-    padding: 10px;
-}
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 150px 20px 150px;
+            border-top: 0.5px solid $c-font;
+        }
+    }
 
-.partners__contact-section--border {
-    border-bottom: 0.5px solid $c-font;
-    border-top: 0.5px solid $c-font;
-}
+    &__contact-section {
+        padding: 10px;
 
-.partners__header-h2 {
-    font-size: 16px;
-    text-align: center;
-}
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 
-.partners__icon-size {
-    width: 45px;
-    margin: 20px auto 20px auto;
-    // border-bottom: 0.9px solid $c-font;
-}
+    &__contact-section--border {
+        border-bottom: 0.5px solid $c-font;
+        border-top: 0.5px solid $c-font;
 
-.partners__contacts-icon {
-    max-width: 100%;
-}
+        @media screen and (min-width: 1200px) {
+            border: none;
+        }
+    }
 
-.partners__form-align {
-    width: 250px;
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 0 auto 0 auto;
+    &__header-h2 {
+        font-size: 16px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 22px;
+        }
+    }
+
+    &__icon-size {
+        width: 45px;
+        margin: 20px auto 20px auto;
+        // border-bottom: 0.9px solid $c-font;
+    }
+
+    &__contacts-icon {
+        max-width: 100%;
+    }
+
+    &__form-align {
+        width: 250px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 0 auto 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 290px;
+            gap: 8px;
+        }
+    }
 }
 
 .footer {
@@ -499,15 +693,9 @@ h1::after {
     color: $c-white;
     text-align: center;
     padding: 25px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        padding: 35px;
+    }
 }
-
-
-
-
-
-
-
-// <img class="header__image-flag-cz" src="images/vlajka.svg" alt="flag of Czech Republic">
-// <img class="header__image-flag-pl" src="images/vlajka.svg" alt="flag of Poland">
-// <img class="header__image-flag-hu" src="images/vlajka.svg" alt="flag of hungary">
-// <img class="header__image-flag-eng" src="images/vlajka.svg" alt="flag of england">
