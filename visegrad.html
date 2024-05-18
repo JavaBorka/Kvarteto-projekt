@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kvarteto</title>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="hero__banner">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/1440x825.jpg">
+                <source media="(max-width: 450px)" srcset="./images/1024x768.jpg">
+                <img class="hero__image" src="./images/1024x768.jpg" alt="St Elizabeth Church">
+            </picture>
+        </div>
+
+        <div class="hero__position">
+            <div class="hero__content">
+                <div class="hero__h2-left">
+                    <div class="hero__header-h2">Aktuálna téma</div>
+                </div>
+                <div class="hero__header-h1">Cirkevné stavby</div>
+                <div class="hero__date">7. 3. 2024 | RTVS: 2</div>
+                <div class="hero__logo">
+                    <img class="hero__image-logo" src="images/logo_DVOJKA_biele.svg" alt="logo of RTVS:2">
+                </div>
+            </div>
+            <div class="hero__button-position">
+                <nav class="button">
+                    <a class="button__link  button__link--icon" href="https://www.ceskatelevize.cz/porady/1098260856-kvarteto/424235100111001/">Prehrať najnovší diel</a>
+                    <div class="button-icon-size">
+                        <img class="button__icon" src="/images/play_icon_plna.svg" alt="play icon">
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <header class="header">
+
+            <div class="header__logo-position">
+                <img class="header__logo" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto">
+            </div>
+
+            <div class="header__menu-position">
+                <nav class="menu">
+                    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+                    <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#home">Domov</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">O nás</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#artists">Tvorcovia</a></li>
+                        <!-- <li class="menu__item"><a class="menu__link" href="#archive">Archív</a></li> -->
+                        <li class="menu__item"><a class="menu__link" href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="flags">
+            <a href="#"><img class="flags__image-flag-cz" src="images/czech republic.svg" alt="flag of Czech Republic"></a>
+            <a href="#"><img class="flags__image-flag-sk" src="images/slovakia.svg" alt="flag of Slovak Republic"></a>
+            <a href="#"><img class="flags__image-flag-pl" src="images/poland.svg" alt="flag of Poland"></a>
+            <a href="#"><img class="flags__image-flag-hu" src="images/hungary.svg" alt="flag of Hungary"></a>
+            <a href="#"><img class="flags__image-flag-en" src="/images/united kingdom.svg" alt="flag of England"></a>
+        </div>
+
+    </section>
+
+    <section class="visegrad-section">
+        <div class="visegrad-section__logo">
+            <a class="visegrad-section__link" href="https://visegradfund.org/"><img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund"></a>
+        </div>
+        <div class="visegrad-section__content visegrad-section__content--narrow">
+            The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe.
+        </div>
+    </section>
+
+    <section class="project-info">
+        <div class="project-info__align">
+            <div class="project-info__item">
+                <p><strong>Project ID number:</strong></p>
+                <p>22410383</p>
+            </div>
+            <div class="project-info__item">
+                <p><strong>Project title:</strong></p>
+                <p>Commemorating 25 years of V4 Quartet magazine, Visegrad Seal festival, Memorial publication, Film</p>
+            </div>
+            <div class="project-info__item project-info__item--center">
+                <p><strong>Project short description:</strong></p>
+                <p>Our project aims to highlight the importance of constant communication of V4 partner countries. We would like to become a good example of long-lasting cooperation to a wide public. <strong>Visegrad Seal Festival</strong> will be a Gala event commemorating 25 years of bringing topics to our audiences. We plan to prepare and launch a memorial publication - 25 years of Quartet and a documentary film of our journey.</p>
+            </div>
+            <div class="project-info__item">
+                <p><strong>Project partners:</strong></p>
+                <p><strong>Ľuba Koľová</strong><br><em>National Quartet coordinator, <a href="https://www.rtvs.sk/televizia/archiv/14252">RTVS Slovakia</a></em></p>
+                <p><strong>Piotr Socha</strong><br><em>National Quartet magazine coordinator, <a href="https://rzeszow.tvp.pl/1668318/kwartet">TVP Poland</a></em></p>
+                <p><strong>Zsuzsa Sári</strong><br><em>National Quartet magazine coordinator, <a href="https://mediaklikk.hu/musor/kvartett-v4-magazin/">MTVA Hungary</a></em></p>
+                <p><strong>Marta Růžičková</strong><br><em>National Quartet magazine coordinator, <a href="https://ceskatelevize.cz/porady/1098260856-kvarteto/">ČT Czech Republic</a></em></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__content">Copyright © 2024 KVARTETO | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
