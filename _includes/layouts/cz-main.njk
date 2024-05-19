@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+
+    <section class="hero" id="home">
+
+        {% include "partials/cz-banner.njk" %}
+
+        {% include "partials/cz-hero.njk" %}
+
+        {% include "partials/cz-header.njk" %}
+
+        <div class="flags">
+            <a href="/cz/#home"><img class="flags__image-flag-cz" src="/images/czech republic.svg" alt="flag of Czech Republic"></a>
+            <a href="#"><img class="flags__image-flag-sk" src="/images/slovakia.svg" alt="flag of Slovak Republic"></a>
+            <a href="#"><img class="flags__image-flag-pl" src="/images/poland.svg" alt="flag of Poland"></a>
+            <a href="#"><img class="flags__image-flag-hu" src="/images/hungary.svg" alt="flag of Hungary"></a>
+            <a href="/en/#home"><img class="flags__image-flag-en" src="/images/united kingdom.svg" alt="flag of England"></a>
+        </div>
+
+    </section>
+
+    {% include "partials/cz-visegrad.njk" %}
+
+    {{ content | safe }}
+
+    {% include "partials/cz-footer.njk" %}
+
+</body>
+</html>
