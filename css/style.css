@@ -652,6 +652,17 @@ body {
     gap: 8px;
   }
 }
+.partners__contact-section--margin {
+  margin-bottom: 30px;
+}
+.partners__email-center {
+  margin: 0 auto 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .partners__email-center {
+    margin: 0;
+  }
+}
 
 .footer {
   background-color: #070F2B;

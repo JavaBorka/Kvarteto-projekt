@@ -720,6 +720,18 @@ body {
             gap: 8px;
         }
     }
+
+    &__contact-section--margin {
+        margin-bottom: 30px;
+    }
+
+    &__email-center {
+        margin: 0 auto 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+        }
+    }
 }
 
 .footer {
