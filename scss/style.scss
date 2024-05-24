@@ -454,15 +454,15 @@ body {
 
 .card {
     width: 100%;
-    // background-color: $c-card;
     background-color: $c-white;
     border: 0.7px solid rgb(233, 230, 230);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    padding: 15px;
+    padding: 30px;
     margin-bottom: 15px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 25px;
 
     @media screen and (min-width: 1200px) {
@@ -475,15 +475,19 @@ body {
     }
 
     &__foto {
-        flex-basis: 40%;
+        // flex-basis: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
     }
 
     &__content {
-        flex-basis: 60%;
+        // flex-basis: 60%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
 
         @media screen and (min-width: 1200px) {
             align-items: center;
@@ -509,22 +513,33 @@ body {
     }
 
     &__img {
-        max-width: 100%;
+        max-width: 80%;
         border-radius: 70%;
         // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        @media screen and (min-width: 1200px) {
+            max-width: 90%;
+        }
     }
 
-    // .card__logo {
-    //     position: absolute;
-    //     top: -75px;
-    //     right: -75px;
-    // }
+    .card__logo {
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+
+        @media screen and (min-width: 1200px) {
+            right: 0px;
+            bottom: -15px;
+            width: 80px;
+            height: 80px;
+        }
+    }
 
     &__svg {
-        max-width: 100%;
-        background-color: white;
+        width: 100%;
         border-radius: 50%;
-        padding: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     }
 }
 
