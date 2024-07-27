@@ -1,0 +1,57 @@
+---
+layout: layouts/main-template.njk
+---
+
+<!-- Tady je hlavička -->
+
+<section class="hero" id="home">
+
+    <div class="hero__banner">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="/images/uploads/{{ foto1440 }}">
+            <source media="(max-width: 450px)" srcset="/images/uploads/{{ foto1024 }}">
+            <img class="hero__image" src="/images/uploads/{{ foto1024 }}" alt="{{ alt }}">
+        </picture>
+    </div>
+
+    <div class="hero__position">
+        <div class="hero__content">
+            <div class="hero__h2-left">
+                <div class="hero__header-h2">{{ header }}</div>
+            </div>
+            <div class="hero__header-h1">{{ title }}</div>
+            <div class="hero__date">{{ datum }} | {{ tv }}</div>
+            <div class="hero__logo">
+                <img class="hero__image-logo" src="/images/{{ logo }}" alt="logo of {{ tv }}">
+            </div>
+        </div>
+        <div class="hero__button-position">
+            <nav class="button">
+                <a class="button__link  button__link--icon" href="{{ link }}">{{ cta }}</a>
+                <div class="button-icon-size">
+                    <img class="button__icon" src="/images/play_icon_plna.svg" alt="play icon">
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    {% include "partials/hero-menu.njk" %}
+
+    {% include "partials/hero-flags.njk" %}
+
+</section>
+
+<!-- Tady je konec hlavičky -->
+
+
+<!-- Tady je hlavní obsah -->
+
+{{ content | safe }}
+
+<!-- Tady je konec hlavního obsahu -->
+
+<!-- Tady je patička -->
+
+{% include "partials/footer.njk" %}
+
+<!-- Konec patičky -->

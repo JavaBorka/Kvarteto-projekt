@@ -1,0 +1,51 @@
+---
+layout: layouts/main-template.njk
+---
+
+<!-- Tady je hlavička -->
+
+<section class="hero" id="home">
+
+    {% include "layouts/hero-episode.njk" %}
+
+    {% include "partials/hero-menu.njk" %}
+
+    {% include "partials/hero-flags.njk" %}
+
+</section>
+
+<!-- Tady je konec hlavičky -->
+
+
+<!-- Tady je hlavní obsah -->
+
+<h1 class="heading-primary" id="archive">Archive</h1>
+
+<div class="archive__episode">
+    <div class="archive__picture">
+        <div class="archive__position">
+            <a href="{{ link }}"><img class="archive__img" src="/images/uploads/{{ foto }}" alt="{{ alt }}"></a>
+            <div class="archive-button">
+                <a class="archive-button__link" href="{{ link }}"><img class="archive-button__icon" src="/images/play_icon_plna.svg" alt="play icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="archive__content">
+        <a class="archive__link" href="{{ link }}"><div class="archive__header">{{ title }}</div></a>
+        <div class="archive__markdown">
+            {{ perex }}
+        </div>
+        <div class="archive__date">{{ datum }} | {{ tv }}</div>
+    </div>
+</div>
+
+{{ content | safe }}
+
+<!-- Tady je konec hlavního obsahu -->
+
+<!-- Tady je patička -->
+
+{% include "partials/footer.njk" %}
+
+<!-- Konec patičky -->

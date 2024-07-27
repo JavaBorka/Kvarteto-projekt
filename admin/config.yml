@@ -1,0 +1,192 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+collections:
+  - name: "archive-episodes"
+    label: "Archive-episodes"
+    folder: "archive-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/archive-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "archive" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Text", name: "perex", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "RTVS :2" }
+      - { label: "Image 357x206 upload", name: "foto", widget: "image" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+  - name: "hero-episodes"
+    label: "Hero-episodes"
+    folder: "hero-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/hero-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "hero" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "Image 1024x768", name: "foto1024", widget: "image" }
+      - { label: "Image 1440x825", name: "foto1440", widget: "image" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+      - { label: "Header", name: "header", widget: "hidden", default: "Latest episode" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "RTVS :2" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Play episode" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+  - name: "cz-hero-episodes"
+    label: "CZ-hero-episodes"
+    folder: "cz-hero-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "czhero" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "Image 1024x768", name: "foto1024", widget: "string" }
+      - { label: "Image 1440x825", name: "foto1440", widget: "string" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+      - { label: "Header", name: "header", widget: "hidden", default: "Poslední díl" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "ČT 2" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Přehrát díl" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+  - name: "sk-hero-episodes"
+    label: "SK-hero-episodes"
+    folder: "sk-hero-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "skhero" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "Image 1024x768 name", name: "foto1024", widget: "string" }
+      - { label: "Image 1440x825 name", name: "foto1440", widget: "string" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+      - { label: "Header", name: "header", widget: "hidden", default: "Posledný diel" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "RTVS :2" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Prehrať diel" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+  - name: "pl-hero-episodes"
+    label: "PL-hero-episodes"
+    folder: "pl-hero-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "plhero" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "Image 1024x768 name", name: "foto1024", widget: "string" }
+      - { label: "Image 1440x825 name", name: "foto1440", widget: "string" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+      - { label: "Header", name: "header", widget: "hidden", default: "Posledný diel" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "TVP 3" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Prehrať diel" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+  - name: "hu-hero-episodes"
+    label: "HU-hero-episodes"
+    folder: "hu-hero-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "huhero" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "Image 1024x768 name", name: "foto1024", widget: "string" }
+      - { label: "Image 1440x825 name", name: "foto1440", widget: "string" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+      - { label: "Header", name: "header", widget: "hidden", default: "Posledný diel" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "Duna TV" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Prehrať diel" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+  - name: "cz-archive-episodes"
+    label: "CZ-archive-episodes"
+    folder: "cz-archive-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "czarchive" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Text", name: "perex", widget: "string" }
+      - { label: "Premiere date", name: "datum", widget: "string" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "ČT 2" }
+      - { label: "Image 357x206 name", name: "foto", widget: "string" }
+      - { label: "Image label", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+  - name: "pl-archive-episodes"
+    label: "PL-archive-episodes"
+    folder: "pl-archive-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "plarchive" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
+      - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "TVP 3" }
+      - { label: "Image 357x206 name (small-business_357x206.jpg)", name: "foto", widget: "string" }
+      - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+  - name: "sk-archive-episodes"
+    label: "SK-archive-episodes"
+    folder: "sk-archive-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "skarchive" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
+      - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "RTVS :2" }
+      - { label: "Image 357x206 name (small-business_357x206.jpg)", name: "foto", widget: "string" }
+      - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }
+  - name: "hu-archive-episodes"
+    label: "HU-archive-episodes"
+    folder: "hu-archive-episodes"
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: "huarchive" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
+      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
+      - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
+      - { label: "TV", name: "tv", widget: "hidden", default: "Duna TV" }
+      - { label: "Image 357x206 name (small-business_357x206.jpg)", name: "foto", widget: "string" }
+      - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
+      - { label: "URL to TV archive", name: "link", widget: "string" }
+      - { label: "Content", name: "body", widget: "hidden" }

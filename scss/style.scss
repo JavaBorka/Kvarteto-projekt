@@ -613,6 +613,36 @@ body {
     }
 }
 
+.button-archive {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 35px 0;
+
+    &__link {
+        display: inline-block;
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-weight: $font-medium;
+        text-align: center;
+        border-radius: 30px;
+        background-color: $c-red-primary;
+        color: $c-white;
+
+        @media screen and (min-width: 1200px) {
+            margin: 20px 0 0 0;
+            font-size: 18px;
+        }
+    }
+
+    &__link:hover {
+        background-color: rgb(178, 20, 70);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        color: $c-white;
+    }
+}
+
 .partners {
     &__content {
         text-align: center;
@@ -773,5 +803,156 @@ body {
     @media screen and (min-width: 1200px) {
         font-size: 12px;
         padding: 35px;
+    }
+}
+
+.archive {
+    &__episode {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        padding: 10px 30px 45px 30px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 35px 280px;
+        }
+    }
+
+    &__episode:hover {
+        background-color: rgb(83, 92, 145, 0.3); ;
+    }
+
+
+    &__picture {
+        flex-basis: 45%;
+    }
+
+    &__picture:hover {
+
+        .archive-button {
+            display: inline-block;
+            position: absolute;
+            background-color: $c-red-primary;
+            padding: 10px 14px 25px 14px;
+            border-radius: 40%;
+            left: 10px;
+            bottom: 12px;
+            width: 50px;
+            height: 18px;
+        
+            @media screen and (min-width: 1200px) {
+                display: inline-block;
+                position: absolute;
+                background-color: $c-red-primary;
+                padding: 14px 14px 14px 17px;
+                border-radius: 40%;
+                left: 20px;
+                bottom: 17px;
+                width: 65px;
+                height: 45px;
+            }
+        
+            &__icon {
+                width: 60%;
+        
+                @media screen and (min-width: 1200px) {
+                    width: 50%;
+                }
+            }
+        
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &__content {
+        flex-basis: 55%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__header {
+        font-size: 17px;
+        font-weight: 700;
+        color: black;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+        }
+    }
+
+    &__date {
+        font-weight: 700;
+    }
+
+    &__markdown {
+        line-height: 1.4;
+        margin: 15px 0;
+    }
+
+    &__position {
+        position: relative;
+    }
+
+    &__link {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: $font-black;
+    }
+}
+
+.archive-button {
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    padding: 10px 14px 25px 14px;
+    border-radius: 40%;
+    left: 10px;
+    bottom: 12px;
+    width: 50px;
+    height: 18px;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        position: absolute;
+        background-color: rgba(0,0,0, .5);
+        padding: 14px 14px 14px 17px;
+        border-radius: 40%;
+        left: 20px;
+        bottom: 17px;
+        width: 65px;
+        height: 45px;
+    }
+
+    &__icon {
+        width: 60%;
+
+        @media screen and (min-width: 1200px) {
+            width: 50%;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
