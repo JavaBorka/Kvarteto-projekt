@@ -1,7 +1,23 @@
 ---
-layout: layouts/en-main.njk
+layout: layouts/page.njk
 title: Kvarteto
 ---
+
+<!-- Tady je Visegrad sekce -->
+
+<section class="visegrad-section">
+    <div class="visegrad-section__logo">
+        <a class="visegrad-section__link" href="https://visegradfund.org/"><img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund"></a>
+    </div>
+    <div class="visegrad-section__content">
+        The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span><a href="/en/visegrad">here</a></span>.
+    </div>
+</section>
+
+<!-- Konec Visegrad sekce -->
+
+
+<!-- Tady je hlavní obsah -->
 
 <section class="about-us">
     <h1 class="heading-primary" id="about">About us</h1>
@@ -104,6 +120,60 @@ title: Kvarteto
     </div>
 
 </section>
+
+
+<!-- Tady začíná sekce archív -->
+
+<section class="archive">
+    <h1 class="heading-primary" id="archive">Latest episodes</h1>
+
+    {% for archive in collections.archive | reverse %}
+
+    <div class="archive__episode">
+        <div class="archive__picture">
+            <div class="archive__position">
+                <a href="{{ archive.data.link }}"><img class="archive__img" src="{{ archive.data.foto }}" alt="{{ archive.data.alt }}"></a>
+                <div class="archive-button">
+                    <a class="archive-button__link" href="{{ archive.data.link }}"><img class="archive-button__icon" src="/images/play_icon_plna.svg" alt="play icon"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="archive__content">
+            <a class="archive__link" href="{{ archive.data.link }}"><div class="archive__header">{{ archive.data.title }}</div></a>
+            <div class="archive__markdown">
+                {{ archive.data.perex }}
+            </div>
+            <div class="archive__date">{{ archive.data.datum }} | {{ archive.data.tv }}</div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    <nav class="button-archive">
+        <a class="button-archive__link" href="/en/archive/#archive">See more</a>
+    </nav>
+
+    <!-- <div class="archive__episode">
+        <div class="archive__picture">
+            <img class="archive__img" src="/images/business_357x206.jpg" alt="Small business main picture">
+        </div>
+        <div class="archive__content">
+            <div class="archive__header">Starodávná řemesla - nové výzvy</div>
+            <div class="archive__markdown">
+                <p>ČT Ostrava: Kovářství na Helfštýně</p>
+                <p>MTVA Szeged: Kartáčníci</p>
+                <p>RTVS Košice: Tkalcovství</p>
+                <p>TVP Kraków: Patchwork</p>
+            </div>
+            <div class="archive__date">4.4. 2024 | RTVS 2</div>
+        </div>
+    </div> -->
+
+</section>
+
+<!-- Tady končí sekce archív -->
+
 
 <section class="partners">
     <h1 class="heading-primary" id="contact">Partners</h1>
