@@ -127,7 +127,7 @@ title: Kvarteto
 <section class="archive">
     <h1 class="heading-primary" id="archive">Latest episodes</h1>
 
-    {% for archive in collections.archive | reverse %}
+    {% for archive in collections.archive | reverse | limit(3) %}
 
     <div class="archive__episode">
         <div class="archive__picture">
