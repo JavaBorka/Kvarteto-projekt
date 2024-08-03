@@ -1,37 +1,37 @@
 ---
-layout: layouts/hu-main.njk
-title: Kvarteto
+layout: layouts/hu-page.njk
+title: Kvartett
 ---
+
+<!-- Tady je Visegrad sekce -->
+
+<section class="visegrad-section">
+    <div class="visegrad-section__logo">
+        <a class="visegrad-section__link" href="https://visegradfund.org/"><img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund"></a>
+    </div>
+    <div class="visegrad-section__content">
+        The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span><a href="/en/visegrad">here</a></span>.
+    </div>
+</section>
+
+<!-- Konec Visegrad sekce -->
+
+
+<!-- Tady je hlavní obsah -->
 
 <section class="about-us">
     <h1 class="heading-primary" id="about">About us</h1>
     <div class="about-us__position">
         <p>
-            Počas existencie KVARTETA bolo odvysielaných takmer 230 premiérových častí. Približne 900 reportáží dokázalo v každej zo 4 susediacich krajín osloviť milióny divákov. Témy zo života obyčajných ľudí, úspechy, problémy a ich riešenia, hospodárstvo, vzdelávanie, veda, kultúra, história, ekológia, šport či zaujímavé prírodné a turistické miesta majú univerzálny, nadčasový a európsky charakter. 
+            Four TV Studios from public service televisions of each of the Visegrad Four countries prepare a common TV magazine monthly.
         </p>
         <p>
-            A práve tematický potenciál dáva KVARTETU šancu uplatniť sa v budúcnosti na televíznych obrazovkách aj s týždennou periodicitou.
+            All the four partners have always been equal cooperators. We began to prepare a common television magazine called QUARTET in 2000. Since then we have never ceased to produce it, although the directors general and political situations changed. RTVS - TV Studio Košice, ČT -  TV Studio Brno and Ostrava, MTVA - Duna TV Szeged, TVP - TVP3 Rzeszow.
         </p>
 
         <div class="about-us__photo">
             <img class="about-us__img" src="/images/foto1-about.jpg" alt="foto from the ceremony">
         </div>
-
-        <p>
-            Perspektívu vidíme aj v podpore Medzinárodného Vyšehradského Fondu, pretože len vďaka osobným stretnutiam tvorcov sa nám darilo KVARTETO vylepšovať a občas aj zachraňovať. Mnohé z miest našich stretnutí by sme pri pracovnej vyťaženosti nemali možnosť vidieť a overiť tak na vlastnej koži ich atraktivitu aj pre diváka.
-        </p>
-
-        <div class="about-us__photo">
-            <img class="about-us__img" src="/images/foto2-about.JPG" alt="foto from the interview">
-        </div>
-
-        <p>
-            V konečnom dôsledku potvrdila opodstatnenosť tejto relácie aj samotná Vyšehradská cena udeľovaná ministrami kultúry krajín V4. Televízny program všetkých štyroch krajín bol ocenený po prvýkrát.
-        </p>
-
-        <p class="about-us__sentence-center">
-            Štyri rôzne ľubozvučné jazyky v tomto KVARTETE ladia dokonale a snáď ešte dlho budú.  
-        </p>
     </div>
     <div class="about-us__logo">
         <img class="about-us__logo-img" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto" >
@@ -83,7 +83,7 @@ title: Kvarteto
             <div class="card__foto">
                 <img class="card__img" src="/images/creator-sari.jpg" alt="Zsuzsa Sári">
                 <div class="card__logo">
-                    <img class="card__svg" src="/images/Sticker_duna1.svg" alt="logo Duna TV">
+                    <img class="card__svg" src="/images/sticker_mtva.svg" alt="logo MTVA TV">
                 </div>
             </div>
             <!-- <div class="card__logo">
@@ -121,17 +121,71 @@ title: Kvarteto
 
 </section>
 
+
+<!-- Tady začíná sekce archív -->
+
+<section class="archive">
+    <h1 class="heading-primary" id="archive">Latest episodes</h1>
+
+    {% for archive in collections.archive | reverse | limit(3) %}
+
+    <div class="archive__episode">
+        <div class="archive__picture">
+            <div class="archive__position">
+                <a href="{{ archive.data.link }}"><img class="archive__img" src="{{ archive.data.foto }}" alt="{{ archive.data.alt }}"></a>
+                <div class="archive-button">
+                    <a class="archive-button__link" href="{{ archive.data.link }}"><img class="archive-button__icon" src="/images/play_icon_plna.svg" alt="play icon"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="archive__content">
+            <a class="archive__link" href="{{ archive.data.link }}"><div class="archive__header">{{ archive.data.title }}</div></a>
+            <div class="archive__markdown">
+                {{ archive.data.perex }}
+            </div>
+            <div class="archive__date">{{ archive.data.datum }} | {{ archive.data.tv }}</div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    <nav class="button-archive">
+        <a class="button-archive__link" href="/en/archive/#archive">See more</a>
+    </nav>
+
+    <!-- <div class="archive__episode">
+        <div class="archive__picture">
+            <img class="archive__img" src="/images/business_357x206.jpg" alt="Small business main picture">
+        </div>
+        <div class="archive__content">
+            <div class="archive__header">Starodávná řemesla - nové výzvy</div>
+            <div class="archive__markdown">
+                <p>ČT Ostrava: Kovářství na Helfštýně</p>
+                <p>MTVA Szeged: Kartáčníci</p>
+                <p>RTVS Košice: Tkalcovství</p>
+                <p>TVP Kraków: Patchwork</p>
+            </div>
+            <div class="archive__date">4.4. 2024 | RTVS 2</div>
+        </div>
+    </div> -->
+
+</section>
+
+<!-- Tady končí sekce archív -->
+
+
 <section class="partners">
-    <h1 class="heading-primary" id="contact">Partneri</h1>
+    <h1 class="heading-primary" id="contact">Partners</h1>
     <div class="partners__align">
-        <p class="partners__content">Ďakujeme všetkým partnerom na Slovensku, v Česku, Poľsku a Maďarsku, bez ktorých by Kvarteto nebolo také, aké je.</p>
+        <p class="partners__content">We thank all partners in Czech Republic, Hungary, Slovakia and Poland for all your support.</p>
         <div class="partners__logo-grid">
             <a href="https://www.ceskatelevize.cz/"><img class="partners__logo" src="/images/Ceska_televize.svg" alt="logo of Ceska Televize TV"></a> 
-            <a href="https://mediaklikk.hu/"><img class="partners__logo partners__logo--small" src="/images/Duna_logo_2012.png" alt="logo of Duna TV"></a>
-            <a href="https://www.rtvs.sk/"><img class="partners__logo partners__logo--small" src="/images/RTV.svg" alt="logo of RTVS TV"></a>
-            <a href="https://www.tvp.pl/"><img class="partners__logo partners__logo--small" src="/images/TVP.svg" alt="logo of TVP TV"></a>
+            <a href="https://mediaklikk.hu/"><img class="partners__logo partners__logo--hu" src="/images/MTVA_logo.svg" alt="logo of MTVA"></a>
+            <a href="https://www.rtvs.sk/"><img class="partners__logo partners__logo--sk-pl" src="/images/RTV.svg" alt="logo of RTVS TV"></a>
+            <a href="https://www.tvp.pl/"><img class="partners__logo partners__logo--sk-pl" src="/images/TVP.svg" alt="logo of TVP TV"></a>
         </div>
-        <p class="partners__content">Za podpory</p>
+        <p class="partners__content">Supported by</p>
         <div class="partners__logo-center">
             <a class="partners__logo-link" href="https://www.visegradfund.org/"><img class="partners__logo" src="/images/visegrad_fund_blue.svg" alt="logo of Visegrad Fund"></a>
         </div>
@@ -139,12 +193,26 @@ title: Kvarteto
 
     <div class="partners__contacts">
         <div class="partners__contact-section partners__contact-section--border">
-            <h2 class="partners__header-h2">Kvarteto na sociálnych sieťach</h2>
+            <h2 class="partners__header-h2">Kvarteto on social networks</h2>
             <div class="partners__icon-size">
-                <img class="partners__contacts-icon" src="/images/facebook.svg" alt="facebook icon">
+                <a href="https://www.facebook.com/KwartetKvartetoKvartett"><img class="partners__contacts-icon" src="/images/facebook.svg" alt="facebook icon"></a>
             </div>
         </div>
-        <div class="partners__contact-section">
+        <div class="partners__contact-section partners__contact-section--margin">
+            <div class="partners__header-align">
+                <h2 class="partners__header-h2">Contact us</h2>
+            </div>
+            <div class="partners__form-align">
+                <div class="partners__email-center">kolova.redakcia@gmail.com</div>
+
+                <!-- <div class="partners__icon-size">
+                    <img class="partners__contacts-icon" src="/images/kontakt.svg" alt="facebook icon">
+                </div>
+                <div>Otvoriť kontaktný formulár</div> -->
+            </div>
+        </div>
+
+        <!-- <div class="partners__contact-section">
             <div class="partners__header-align">
                 <h2 class="partners__header-h2">Napíšte nám</h2>
             </div>
@@ -154,6 +222,6 @@ title: Kvarteto
                 </div>
                 <div>Otvoriť kontaktný formulár</div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>

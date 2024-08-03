@@ -1,5 +1,5 @@
 ---
-layout: layouts/cz-page.njk
+layout: layouts/sk-page.njk
 title: Kvarteto
 ---
 
@@ -10,7 +10,7 @@ title: Kvarteto
         <a class="visegrad-section__link" href="https://visegradfund.org/"><img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund"></a>
     </div>
     <div class="visegrad-section__content">
-        Projekt je financován: The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span><a href="/cz/visegrad">here</a></span>.
+        Projekt je financovaný: The project is co-financed by the Governments of Czechia, Hungary, Poland and Slovakia through Visegrad Grants from International Visegrad Fund. The mission of the fund is to advance ideas for sustainable regional cooperation in Central Europe. Read more about project <span><a href="/sk/visegrad">here</a></span>.
     </div>
 </section>
 
@@ -20,10 +20,10 @@ title: Kvarteto
 <!-- Tady je hlavní obsah -->
 
 <section class="about-us">
-    <h1 class="heading-primary" id="onas">About us</h1>
+    <h1 class="heading-primary" id="onas">O nás</h1>
     <div class="about-us__position">
         <p>
-            Čtyři televizní studia: Four TV Studios from public service televisions of each of the Visegrad Four countries prepare a common TV magazine monthly.
+            Štyri televízne štúdiá: Four TV Studios from public service televisions of each of the Visegrad Four countries prepare a common TV magazine monthly.
         </p>
         <p>
             All the four partners have always been equal cooperators. We began to prepare a common television magazine called QUARTET in 2000. Since then we have never ceased to produce it, although the directors general and political situations changed. RTVS - TV Studio Košice, ČT -  TV Studio Brno and Ostrava, MTVA - Duna TV Szeged, TVP - TVP3 Rzeszow.
@@ -39,7 +39,7 @@ title: Kvarteto
 </section>
 
 <section class="artists">
-    <h1 class="heading-primary" id="tvurci">Creators</h1>
+    <h1 class="heading-primary" id="tvorcovia">Tvorcovia</h1>
     <div class="artists__align">
         <div class="card">
             <div class="card__foto">
@@ -120,13 +120,12 @@ title: Kvarteto
     </div>
 </section>
 
-
 <!-- Tady začíná sekce archív -->
 
 <section class="archive">
     <h1 class="heading-primary" id="archiv">Latest episodes</h1>
 
-    {% for archive in collections.czarchive | reverse | limit(3) %}
+    {% for archive in collections.skarchive | reverse | limit(3) %}
 
     <div class="archive__episode">
         <div class="archive__picture">
@@ -150,8 +149,8 @@ title: Kvarteto
     {% endfor %}
 
     <nav class="button-archive">
-        <a class="button-archive__link" href="/cz/archiv/#archiv">Ukázat víc</a>
-    </nav>
+        <a class="button-archive__link" href="/sk/archiv/#archiv">Ukázať viac</a>
+    </nav>   
 
     <!-- <div class="archive__episode">
         <div class="archive__picture">
@@ -173,9 +172,8 @@ title: Kvarteto
 
 <!-- Tady končí sekce archív -->
 
-
 <section class="partners">
-    <h1 class="heading-primary" id="kontakt">Partners</h1>
+    <h1 class="heading-primary" id="contact">Partners</h1>
     <div class="partners__align">
         <p class="partners__content">We thank all partners in Czech Republic, Hungary, Slovakia and Poland for all your support.</p>
         <div class="partners__logo-grid">
