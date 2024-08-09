@@ -1,0 +1,45 @@
+---
+layout: layouts/pl-page.njk
+title: Archiwum
+---
+
+<!-- Tady je Visegrad sekce -->
+
+<section class="visegrad-section">
+    <div class="visegrad-section__logo">
+        <a class="visegrad-section__link" href="https://visegradfund.org/"><img class="visegrad-section__logo-img" src="/images/visegrad_fund_black.svg" alt="logo of Visegrad Fund"></a>
+    </div>
+    <div class="visegrad-section__content">
+        Projekt jest współfinansowany przez rządy Czech, Węgier, Polski i Słowacji za pośrednictwem Grantów Wyszehradzkich z Międzynarodowego Funduszu Wyszehradzkiego. Misją funduszu jest promowanie idei zrównoważonej współpracy regionalnej w Europie Środkowej. Więcej o projekcie można przeczytać <span><a href="/pl/visegrad">tutaj</a></span>.
+    </div>
+</section>
+
+<!-- Konec Visegrad sekce -->
+
+<section class="archive">
+    <h1 class="heading-primary" id="archiwum">Archiwum</h1>
+
+    {% for archive in collections.plarchive | reverse %}
+
+        <div class="archive__episode">
+            <div class="archive__picture">
+                <div class="archive__position">
+                    <a href="{{ archive.data.link }}"><img class="archive__img" src="/images/uploads/{{ archive.data.foto }}" alt="{{ archive.data.alt }}"></a>
+                    <div class="archive-button">
+                        <a class="archive-button__link" href="{{ archive.data.link }}"><img class="archive-button__icon" src="/images/play_icon_plna.svg" alt="play icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="archive__content">
+                <a class="archive__link" href="{{ archive.data.link }}"><div class="archive__header">{{ archive.data.title }}</div></a>
+                <div class="archive__markdown">
+                    {{ archive.data.perex }}
+                </div>
+                <div class="archive__date">{{ archive.data.datum }} | {{ archive.data.tv }}</div>
+            </div>
+        </div>
+
+    {% endfor %}
+    
+</section>
