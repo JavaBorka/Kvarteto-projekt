@@ -3,7 +3,7 @@ layout: layouts/non-en-hero-episode.njk
 header: Ostatni odcinek
 date: "2024-05-09"
 tv: "TVP 3"
-cta: Odtwórz odcinek
+cta: Zagraj
 logo: logo_DVOJKA_biele.svg
 tags: plhero
 title: Stare zawody
