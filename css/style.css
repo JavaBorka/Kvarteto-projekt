@@ -115,13 +115,23 @@ body {
     gap: 7px;
   }
 }
-.hero__logo {
+.hero__logo-sk {
   width: 50px;
 }
 @media screen and (min-width: 1200px) {
-  .hero__logo {
+  .hero__logo-sk {
     width: 100px;
     margin-top: 10px;
+  }
+}
+.hero__logo-tvp3 {
+  width: 80px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__logo-tvp3 {
+    width: 210px;
+    margin-top: 25px;
   }
 }
 .hero__image-logo {

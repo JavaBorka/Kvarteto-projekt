@@ -3,8 +3,8 @@ layout: layouts/non-en-hero-episode.njk
 header: Ostatni odcinek
 date: "2024-05-09"
 tv: "TVP 3"
-cta: Zagraj
-logo: logo_DVOJKA_biele.svg
+cta: Przeglądaj
+logo: logo_TVP3_original.svg
 tags: plhero
 title: Stare zawody
 datum: 9. 5. 2024

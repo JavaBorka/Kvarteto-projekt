@@ -4,7 +4,7 @@ header: Ostatni odcinek
 date: "2024-03-07"
 tv: "TVP 3"
 cta: Odtwórz wideo
-logo: logo_DVOJKA_biele.svg
+logo: logo_TVP3.svg
 tags: plhero
 title: Recykling
 datum: 7. 3. 2024
