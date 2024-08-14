@@ -54,8 +54,8 @@ collections:
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
       - { label: "Title (10-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
-      - { label: "Image 1024x768 name (small-business_1024x768.jpg)", name: "foto1024", widget: "string" }
-      - { label: "Image 1440x825 name (small-business_1440x825.jpg)", name: "foto1440", widget: "string" }
+      - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
+      - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
       - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
       - { label: "URL to TV archive", name: "link", widget: "string" }
       - { label: "Content", name: "body", widget: "hidden" }
@@ -91,8 +91,8 @@ collections:
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
       - { label: "Title (10-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
-      - { label: "Image 1024x768 name (small-business_1024x768.jpg)", name: "foto1024", widget: "string" }
-      - { label: "Image 1440x825 name (small-business_1440x825.jpg)", name: "foto1440", widget: "string" }
+      - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
+      - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
       - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
       - { label: "URL to TV archive", name: "link", widget: "string" }
       - { label: "Content", name: "body", widget: "hidden" }
@@ -128,8 +128,8 @@ collections:
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
       - { label: "Title (10-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
-      - { label: "Image 1024x768 name (small-business_1024x768.jpg)", name: "foto1024", widget: "string" }
-      - { label: "Image 1440x825 name (small-business_1440x825.jpg)", name: "foto1440", widget: "string" }
+      - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
+      - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
       - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
       - { label: "URL to TV archive", name: "link", widget: "string" }
       - { label: "Content", name: "body", widget: "hidden" }
@@ -165,8 +165,8 @@ collections:
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
       - { label: "Title (10-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
-      - { label: "Image 1024x768 name (small-business_1024x768.jpg)", name: "foto1024", widget: "string" }
-      - { label: "Image 1440x825 name (small-business_1440x825.jpg)", name: "foto1440", widget: "string" }
+      - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
+      - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
       - { label: "Image label (Parfume and flowers)", name: "alt", widget: "string" }
       - { label: "URL to TV archive", name: "link", widget: "string" }
       - { label: "Content", name: "body", widget: "hidden" }

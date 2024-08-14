@@ -12,9 +12,9 @@ language: cs
     <div>
         <div class="hero__banner">
             <picture>
-                <source media="(min-width: 1200px)" srcset="/images/uploads/{{ hero.data.foto1440 }}">
-                <source media="(max-width: 450px)" srcset="/images/uploads/{{ hero.data.foto1024 }}">
-                <img class="hero__image" src="/images/uploads/{{ hero.data.foto1024 }}" alt="{{ hero.data.alt }}">
+                <source media="(min-width: 1200px)" srcset="{{ hero.data.foto1440 }}">
+                <source media="(max-width: 450px)" srcset="{{ hero.data.foto1024 }}">
+                <img class="hero__image" src="{{ hero.data.foto1024 }}" alt="{{ hero.data.alt }}">
             </picture>
         </div>
 
