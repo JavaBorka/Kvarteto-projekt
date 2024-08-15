@@ -116,8 +116,8 @@ body {
   }
 }
 .hero__logo-sk {
-  width: 50px;
-  margin-top: 10px;
+  width: 45px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 1200px) {
   .hero__logo-sk {
@@ -136,8 +136,8 @@ body {
   }
 }
 .hero__logo-duna {
-  width: 105px;
-  margin-top: 10px;
+  width: 90px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 1200px) {
   .hero__logo-duna {
@@ -146,8 +146,8 @@ body {
   }
 }
 .hero__logo-ct2 {
-  width: 80px;
-  margin-top: 10px;
+  width: 75px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 1200px) {
   .hero__logo-ct2 {
