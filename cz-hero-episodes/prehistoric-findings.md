@@ -3,7 +3,7 @@ layout: layouts/non-en-hero-episode.njk
 title: Archeologické nálezy
 date: "2024-06-27"
 cta: Přehrát díl
-logo: logo_DVOJKA_biele.svg
+logo: logo_ct2.svg
 tv: "ČT 2"
 link: https://www.ceskatelevize.cz/porady/1098260856-kvarteto/424235100111005/
 datum: 27. 6. 2024

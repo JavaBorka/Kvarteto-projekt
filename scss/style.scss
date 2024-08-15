@@ -129,14 +129,35 @@ body {
 
     &__logo-sk {
         width: 50px;
+        margin-top: 10px;
 
         @media screen and (min-width: 1200px) {
-            width: 100px;
+            width: 110px;
             margin-top: 10px;
         }
     }
 
     &__logo-tvp3 {
+        width: 80px;
+        margin-top: 10px;
+
+        @media screen and (min-width: 1200px) {
+            width: 210px;
+            margin-top: 25px;
+        }
+    }
+
+    &__logo-duna {
+        width: 105px;
+        margin-top: 10px;
+
+        @media screen and (min-width: 1200px) {
+            width: 230px;
+            margin-top: 25px;
+        }
+    }
+
+    &__logo-ct2 {
         width: 80px;
         margin-top: 10px;
 

@@ -117,10 +117,11 @@ body {
 }
 .hero__logo-sk {
   width: 50px;
+  margin-top: 10px;
 }
 @media screen and (min-width: 1200px) {
   .hero__logo-sk {
-    width: 100px;
+    width: 110px;
     margin-top: 10px;
   }
 }
@@ -130,6 +131,26 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__logo-tvp3 {
+    width: 210px;
+    margin-top: 25px;
+  }
+}
+.hero__logo-duna {
+  width: 105px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__logo-duna {
+    width: 230px;
+    margin-top: 25px;
+  }
+}
+.hero__logo-ct2 {
+  width: 80px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__logo-ct2 {
     width: 210px;
     margin-top: 25px;
   }

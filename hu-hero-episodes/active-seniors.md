@@ -3,8 +3,8 @@ layout: layouts/non-en-hero-episode.njk
 header: Legújabb epizód
 date: "2024-08-01"
 tv: "Duna"
-cta: Videó lejátszása
-logo: logo_DVOJKA_biele.svg
+cta: Kijelző
+logo: Duna_logo.svg
 tags: huhero
 title: Aktívan, időskorban
 datum: 1. 8. 2024

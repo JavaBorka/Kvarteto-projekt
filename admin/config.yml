@@ -163,7 +163,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "huhero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (13-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
