@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: plhero
-date: Created
+date: "2024-08-16"
 title: Aktywni seniorzy
 datum: 14. 8. 2024
 foto1024: /images/uploads/Active_seniors_1024x768.jpg

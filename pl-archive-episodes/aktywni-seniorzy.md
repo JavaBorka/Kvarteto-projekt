@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: plarchive
-date: Created
+date: "2024-08-16"
 title: Aktywni seniorzy
 perex: ČT Ostrava - Klub Velocipedystów z Ostrawy | MTVA Szeged - Smocze Łodzie
   w Szeged | STVR Košice - Mażoretki jeziorne z Koszyc | TVP Kraków -
