@@ -4,7 +4,7 @@ tags: huarchive
 date: 2024-06-06
 title: Az ősi idők nyomában
 perex: ČT Ostrava - Egyedülálló ókori művészet | MTVA Szeged - Őskori karszt a
-  magyar Balaton mellett | RTVS Kassa - Őskori Archeoskanzen Nižná Myšľa | TVP
+  magyar Balaton mellett | RTVS Košice - Őskori Archeoskanzen Nižná Myšľa | TVP
   Kraków - Egyedülálló mészkő táj több száz barlanggal
 datum: 6. 6. 2024
 tv: Duna
