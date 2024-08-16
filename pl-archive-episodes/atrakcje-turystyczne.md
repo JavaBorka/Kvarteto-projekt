@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: plarchive
-date: Created
+date: "2024-08-15"
 title: Atrakcje turystyczne
 perex: ČT Ostrava - Podróż śladami Napoleona | MTVA Szeged - Metro w Budapeszcie
   | RTVS Koszyce - Uzdrowisko Bardejów | TVP Kraków - Huta w Krakowie
