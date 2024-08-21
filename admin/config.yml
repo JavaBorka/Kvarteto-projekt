@@ -16,7 +16,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "hero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (12-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
@@ -25,7 +25,7 @@ collections:
       - { label: "Content", name: "body", widget: "hidden" }
       - { label: "Header", name: "header", widget: "hidden", default: "Latest episode" }
       - { label: "TV", name: "tv", widget: "hidden", default: "STVR :2" }
-      - { label: "Button", name: "cta", widget: "hidden", default: "Play episode" }
+      - { label: "Button", name: "cta", widget: "hidden", default: "Play" }
       - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
   - name: "archive-episodes"
     label: "EN-archive-episodes"
@@ -35,7 +35,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "archive" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "TV", name: "tv", widget: "hidden", default: "STVR :2" }
@@ -52,7 +52,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "skhero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (12-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
@@ -72,7 +72,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "skarchive" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "TV", name: "tv", widget: "hidden", default: "STVR :2" }
@@ -89,7 +89,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "czhero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (12-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
@@ -109,7 +109,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "czarchive" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "TV", name: "tv", widget: "hidden", default: "ČT 2" }
@@ -126,7 +126,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "plhero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (12-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
@@ -146,7 +146,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "plarchive" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "TV", name: "tv", widget: "hidden", default: "TVP 3" }
@@ -163,7 +163,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-hero-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "huhero" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (13-20 characters)", name: "title", widget: "string" }
+      - { label: "Title (12-20 characters)", name: "title", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "Image 1024x768 upload", name: "foto1024", widget: "image" }
       - { label: "Image 1440x825 upload", name: "foto1440", widget: "image" }
@@ -183,7 +183,7 @@ collections:
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/non-en-archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "huarchive" }
       - { label: "Date", name: "date", widget: "hidden", default: "Created" }
-      - { label: "Title (10-20 characters)", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
       - { label: "TV", name: "tv", widget: "hidden", default: "Duna" }
