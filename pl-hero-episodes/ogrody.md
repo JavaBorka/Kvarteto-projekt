@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: plhero
-date: Created
+date: "2024-09-17"
 title: Ogrody
 datum: 17. 9. 2024
 foto1024: /images/uploads/special_gardens_1024x768.jpg
