@@ -11,5 +11,5 @@ link: https://www.ceskatelevize.cz/porady/1098260856-kvarteto/424235100111007/
 header: Poslední díl
 tv: ČT 2
 cta: Přehrát díl
-logo: logo_DVOJKA_biele.svg
+logo: logo_ct2.svg
 ---
