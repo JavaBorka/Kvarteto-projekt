@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: plarchive
-date: Created
+date: "2024-09-10"
 title: Śladami prehistorii
 perex: "ČT Ostrava: Rzeźba na głazie | RTVS Košice: 3500 lat temu | MTVA Szeged:
   Palaeokras Úrkút | TVP Kraków: Jaskinie Krakowsko-Częstochowskie Jury"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: plarchive
-date: Created
+date: "2024-09-03"
 title: Małe rodzinne firmy
 perex: "ČT Brno: Czekolada z Moraw | MTVA Szeged: Hodinář z Pětikostelí | STVR
   Košice: Królestwo Zapachów | TVP Kraków: Piekarnia"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: plhero
-date: Created
+date: "2024-09-10"
 title: Śladami prehistorii
 datum: 10. 9. 2024
 foto1024: /images/uploads/Prehistoric_findings_1024x768.jpg
