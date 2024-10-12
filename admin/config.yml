@@ -99,7 +99,7 @@ collections:
       - { label: "Header", name: "header", widget: "hidden", default: "Poslední díl" }
       - { label: "TV", name: "tv", widget: "hidden", default: "ČT 2" }
       - { label: "Button", name: "cta", widget: "hidden", default: "Přehrát díl" }
-      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_DVOJKA_biele.svg" }
+      - { label: "Logo", name: "logo", widget: "hidden", default: "logo_ct2.svg" }
   - name: "cz-archive-episodes"
     label: "CZ-archive-episodes"
     folder: "cz-archive-episodes"

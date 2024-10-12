@@ -2,7 +2,7 @@
 layout: layouts/non-en-hero-episode.njk
 tags: plhero
 date: "2024-09-17"
-title: Ogrody
+title: Wyjątkowe ogrody
 datum: 17. 9. 2024
 foto1024: /images/uploads/special_gardens_1024x768.jpg
 foto1440: /images/uploads/special_gardens_1440x825-1-.jpg
