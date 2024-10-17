@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: czhero
-date: Created
+date: "2024-09-21"
 title: Výjimečné zahrady
 datum: 21. 9. 2024
 foto1024: /images/uploads/special_gardens_1024x768.jpg

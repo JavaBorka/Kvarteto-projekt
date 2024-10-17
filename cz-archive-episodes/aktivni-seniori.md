@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: czarchive
-date: Created
+date: "2024-09-02"
 title: Aktivní senioři
 perex: "ČT Ostrava: Klub velocipedistů | TVP Kraków: Proběhnout životem | RTVS
   Košice: Jezerské mažoretky | MTVA Szeged: Dračí lodě"
