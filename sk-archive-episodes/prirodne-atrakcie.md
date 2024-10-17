@@ -3,8 +3,8 @@ layout: layouts/non-en-archive-episode.njk
 tags: skarchive
 date: Created
 title: Prírodné atrakcie
-perex: "ČT Ostrava: Arborétum Makču Pikču|TVP Kraków: Błędowská púšť|RTVS
-  Košice: Herlianský gejzír|MTVA Szeged: Jazero na vrchu Megyer"
+perex: "ČT Ostrava: Arborétum Makču Pikču | TVP Kraków: Błędowská púšť | RTVS
+  Košice: Herlianský gejzír | MTVA Szeged: Jazero na vrchu Megyer"
 datum: 28. 9. 2024
 tv: STVR :2
 foto: /images/uploads/natural_attractions_357x206.jpg
