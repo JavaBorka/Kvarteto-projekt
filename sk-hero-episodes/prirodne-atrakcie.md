@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: skhero
-date: Created
+date: "2024-09-28"
 title: Prírodné atrakcie
 datum: 28. 9. 2024
 foto1024: /images/uploads/natural_attractions_1024x768.jpg

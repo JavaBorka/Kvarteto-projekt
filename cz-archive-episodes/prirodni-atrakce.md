@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: czarchive
-date: Created
+date: "2024-10-17"
 title: Přírodní atrakce
 perex: "ČT Ostrava: Arboretum Makču Pikču | TVP Kraków: Błędowská poušť | RTVS
   Košice: Herlianský gejzír | MTVA Szeged: Jezero na vrcholu Megyer"

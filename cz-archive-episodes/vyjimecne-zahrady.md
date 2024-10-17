@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: czarchive
-date: Created
+date: "2024-09-21"
 title: Výjimečné zahrady
 perex: "ČT Brno: Zahrady v Kroměříži | MTVA Szeged: Motýlí dům | RTVS Košice:
   Rozárium | TVP Rzeszów: Kouzelné Bolestraszyce"
