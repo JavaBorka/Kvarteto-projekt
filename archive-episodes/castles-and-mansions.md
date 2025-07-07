@@ -1,7 +1,7 @@
 ---
 layout: layouts/archive-episode.njk
 tags: archive
-title: Castles|and|mansions
+title: Castles and mansions
 perex: "ČT BRNO: VALTICE PALACE | STVR KOŠICE: MAJEROVCE MANSION | DUNA TV
   SZEGED: FESTETICS CASTLE | TVP3: LANCET CASTLE"
 datum: 26.10. 2024
