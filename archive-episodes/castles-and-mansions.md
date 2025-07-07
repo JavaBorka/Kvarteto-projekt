@@ -2,8 +2,8 @@
 layout: layouts/archive-episode.njk
 tags: archive
 title: Castles and mansions
-perex: "ČT BRNO: VALTICE PALACE | STVR KOŠICE: MAJEROVCE MANSION | DUNA TV
-  SZEGED: FESTETICS CASTLE | TVP3: LANCET CASTLE"
+perex: "ČT Brno: Valtice Palace | STVR Košice: Majerovce Mansion | DUNA TV
+  Szeged: Festetics Castle | TVP3: Lancet Castle"
 datum: 26.10. 2024
 tv: STVR :2
 foto: /images/uploads/castles_mansions_357x206.jpg
