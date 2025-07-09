@@ -32,9 +32,28 @@ title: Kvarteto - Magazín krajín V4
         <div class="about-us__photo">
             <img class="about-us__img" src="/images/foto1-about.jpg" alt="foto from the ceremony">
         </div>
+        <p>
+            Pri príležitosti 25. výročia relácie Kvarteto vznikla <strong>jedinečná kniha</strong>, ktorá mapuje štvrťstoročie spolupráce verejnoprávnych televízií krajín V4.
+            Tvorcovia relácie v nej spomínajú na okolnosti vzniku, nečakané výzvy aj veselé stretnutia v štyroch krajinách.
+            Kniha je poctou medzinárodnej spolupráci, ktorá sa za 25 rokov pretavila do výnimočného televízneho projektu spájajúceho kultúru, tradície a ľudí v Česku, Maďarsku, Poľsku a na Slovensku &lpar; <a href="/pdfs/kvarteto-kniha.pdf" download>stiahnuť PDF súbor</a> &rpar;.
+        </p>
     </div>
-    <div class="about-us__logo">
-        <img class="about-us__logo-img" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto" >
+    <div class="pdf-viewer">
+        <canvas id="pdf-canvas"></canvas>
+        
+        <div class="pdf-controls">
+            <button id="prev-page" class="pdf-arrow" aria-label="Předchozí strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span id="page-info">1 / ?</span>
+            <button id="next-page" class="pdf-arrow" aria-label="Další strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 

@@ -32,9 +32,26 @@ title: Kwartet - Magazyn krajów V4
         <div class="about-us__photo">
             <img class="about-us__img" src="/images/foto1-about.jpg" alt="foto from the ceremony">
         </div>
+        <p>
+            Z okazji 25-lecia programu Kvarteto powstała <strong>wyjątkowa książka</strong>, która mapuje ćwierćwiecze współpracy telewizji publicznych krajów V4. Twórcy programu wspominają okoliczności jego powstania, nieoczekiwane wyzwania i radosne spotkania w czterech krajach. Książka jest hołdem dla międzynarodowej współpracy, która przez 25 lat przekształciła się w wyjątkowy projekt telewizyjny łączący kulturę, tradycje i ludzi w Czechach, Węgrzech, Polsce i na Słowacji &lpar; <a href="/pdfs/kvarteto-kniha.pdf" download>pobierz plik PDF</a> &rpar;.
+        </p>
     </div>
-    <div class="about-us__logo">
-        <img class="about-us__logo-img" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto" >
+    <div class="pdf-viewer">
+        <canvas id="pdf-canvas"></canvas>
+        
+        <div class="pdf-controls">
+            <button id="prev-page" class="pdf-arrow" aria-label="Předchozí strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span id="page-info">1 / ?</span>
+            <button id="next-page" class="pdf-arrow" aria-label="Další strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 

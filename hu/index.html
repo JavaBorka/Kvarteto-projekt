@@ -32,9 +32,27 @@ title: Kvartett - V4 magazin Kvartett
         <div class="about-us__photo">
             <img class="about-us__img" src="/images/foto1-about.jpg" alt="foto from the ceremony">
         </div>
+        <p>
+            A Kvarteto műsor 25. évfordulója alkalmából egyedülálló könyv készült, amely egy negyed évszázadnyi együttműködést térképez fel a V4-es országok közszolgálati televíziói között. A műsor készítői visszaemlékeznek a kezdetek körülményeire, váratlan kihívásokra és vidám találkozásokra a négy országban. A könyv tisztelgés a nemzetközi együttműködés előtt, amely 25 év alatt egy kivételes televíziós projektté vált, összekapcsolva a kultúrát, hagyományokat és embereket Csehországban, Magyarországon, Lengyelországban és Szlovákiában &lpar; <a href="/pdfs/kvarteto-kniha.pdf" download>töltsd le a PDF fájlt</a> &rpar;.
+        </p>
     </div>
-    <div class="about-us__logo">
-        <img class="about-us__logo-img" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto" >
+
+    <div class="pdf-viewer">
+        <canvas id="pdf-canvas"></canvas>
+        
+        <div class="pdf-controls">
+            <button id="prev-page" class="pdf-arrow" aria-label="Předchozí strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span id="page-info">1 / ?</span>
+            <button id="next-page" class="pdf-arrow" aria-label="Další strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 
