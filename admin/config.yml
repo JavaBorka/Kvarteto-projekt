@@ -35,6 +35,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Template", name: "layout", widget: "hidden", default: "layouts/archive-episode.njk" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "archive" }
+      - { label: "Date", name: "date", widget: "hidden", default: "Created" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Text (ČT Brno: Chocolateria in Moravia | MTVA Szeged: Clockmaker from Szeged | ...)", name: "perex", widget: "string" }
       - { label: "Premiere date (25. 4. 2024)", name: "datum", widget: "string" }
