@@ -1,6 +1,7 @@
 ---
 layout: layouts/archive-episode.njk
 tags: archive
+date: "2024-09-28"
 title: Natural attractions
 perex: "ČT Ostrava: Arboretum Makču Pikču | TVP Kraków: Błędowska poušť | RTVS
   Košice: Herlian Geyser | MTVA Szeged: Lake on top of Megyer"
