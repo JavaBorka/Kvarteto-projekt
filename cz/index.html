@@ -19,7 +19,7 @@ title: Kvarteto - Magazín zemí V4
 
 <!-- Tady je hlavní obsah -->
 
-<section class="about-us">
+<!-- <section class="about-us">
     <h1 class="heading-primary" id="onas">O nás</h1>
     <div class="about-us__position">
         <p>
@@ -35,6 +35,43 @@ title: Kvarteto - Magazín zemí V4
     </div>
     <div class="about-us__logo">
         <img class="about-us__logo-img" src="/images/kvarteto_logo.svg" alt="logo of Kvarteto" >
+    </div>
+</section> -->
+
+<section class="about-us">
+    <h1 class="heading-primary" id="onas">O nás</h1>
+    <div class="about-us__position">
+        <p>
+            Čtyři televizní studia z veřejnoprávních televizí každé země Visegrádské skupiny připravují společný televizní magazín každý měsíc.
+        </p>
+        <p>
+            Všichni čtyři partneři byli vždy rovnocennými spolupracovníky. Začali jsme připravovat společný televizní magazín s názvem QUARTET v roce 2000. Od té doby jsme ho nikdy nepřestali produkovat, ačkoliv se měnili generální ředitelé i politické situace. RTVS - TV Studio Košice, ČT - TV Studio Brno a Ostrava, MTVA - Duna TV Szeged, TVP - TVP3 Rzeszów.
+        </p>
+
+        <div class="about-us__photo">
+            <img class="about-us__img" src="/images/foto1-about.jpg" alt="foto from the ceremony">
+        </div>
+        <p>
+            Pod tímto textem bude pdf kniha. Bude tady dlouhý text a tři velmi dlouhé věty. Celý dokument si můžete stáhnout zde:
+            <a href="/pdfs/kvarteto-kniha.pdf" download>Stáhnout PDF</a>
+        </p>
+    </div>
+    <div class="pdf-viewer">
+        <canvas id="pdf-canvas"></canvas>
+        
+        <div class="pdf-controls">
+            <button id="prev-page" class="pdf-arrow" aria-label="Předchozí strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span id="page-info">1 / ?</span>
+            <button id="next-page" class="pdf-arrow" aria-label="Další strana">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 

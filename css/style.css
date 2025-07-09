@@ -917,3 +917,49 @@ body {
     align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
+
+.pdf-viewer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#pdf-canvas {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* jen vpravo a dole */
+}
+
+.pdf-arrow {
+  all: unset;
+  cursor: pointer;
+  color: #1B1A55;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.pdf-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+#page-info {
+  color: #1B1A55;
+  font-weight: 500; /* volitelně: trochu zvýraznit */
+  font-size: 1rem;   /* přizpůsob velikosti, pokud chceš */
+}

@@ -14,6 +14,8 @@ module.exports = function(eleventyConfig) {
   // admin složka pro Netlify CMS
   eleventyConfig.addPassthroughCopy("admin");
 
+  eleventyConfig.addPassthroughCopy("pdfs");
+
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });

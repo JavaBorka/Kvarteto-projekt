@@ -10,7 +10,7 @@
         <title>{{ title }}</title>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
-
+    
     <body>
 
         {{ content | safe }}
@@ -25,6 +25,53 @@
                 }
               });
             }
+          </script>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+          <script>
+            const url = "/pdfs/kvarteto-kniha.pdf";
+
+            let pdfDoc = null;
+            let currentPage = 1;
+            let totalPages = 0;
+
+            const canvas = document.getElementById("pdf-canvas");
+            const ctx = canvas.getContext("2d");
+            const pageInfo = document.getElementById("page-info");
+
+            const renderPage = (num) => {
+              pdfDoc.getPage(num).then(page => {
+                const viewport = page.getViewport({ scale: 2.0 });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                  canvasContext: ctx,
+                  viewport: viewport
+                };
+                page.render(renderContext);
+
+                pageInfo.textContent = `${num} / ${pdfDoc.numPages}`;
+              });
+            };
+
+            pdfjsLib.getDocument(url).promise.then(pdf => {
+              pdfDoc = pdf;
+              totalPages = pdf.numPages;
+              renderPage(currentPage);
+            });
+
+            document.getElementById("prev-page").addEventListener("click", () => {
+              if (currentPage <= 1) return;
+              currentPage--;
+              renderPage(currentPage);
+            });
+
+            document.getElementById("next-page").addEventListener("click", () => {
+              if (currentPage >= totalPages) return;
+              currentPage++;
+              renderPage(currentPage);
+            });
           </script>
 
     </body>
