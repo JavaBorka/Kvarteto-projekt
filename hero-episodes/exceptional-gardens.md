@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2024-08-31"
 title: Exceptional gardens
 datum: 31. 8. 2024
 foto1024: /images/uploads/special_gardens_1024x768.jpg

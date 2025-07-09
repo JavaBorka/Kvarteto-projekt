@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2024-10-26"
 title: Castles and mansions
 datum: 26. 10. 2024
 foto1024: /images/uploads/castles_mansions_1024x768.jpg
