@@ -3,7 +3,7 @@ layout: layouts/archive-episode.njk
 tags: archive
 date: Created
 title: Festivals
-perex: "DUNA TV Syeged: 48-hour Medveš Photo Marathon | ČT Brno: Short film
+perex: "DUNA TV Szeged: 48-hour Medveš Photo Marathon | ČT Brno: Short film
   festival Brno 16 | TVP 3 Rzeszów: Medina in Polish Podkarpacie Pottery Fair |
   STVR Košice: International pierogi cooking festival in Svidník"
 datum: 14.12. 2024
