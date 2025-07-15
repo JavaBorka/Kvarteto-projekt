@@ -3,7 +3,7 @@ layout: layouts/archive-episode.njk
 tags: archive
 date: Created
 title: Heritage of the Past
-perex: " ČT Brno: Moravian Manchester | TV DUNA Szeged: Memento Park in Budapest
+perex: " ČT Brno: Moravian Manchester | DUNA TV Szeged: Memento Park in Budapest
   | TVP 3 Kraków: Mining town of Olkusz | STVR Košice: Košice Castle medieval
   village"
 datum: 22.02. 2025
