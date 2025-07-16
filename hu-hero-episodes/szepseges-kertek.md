@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-hero-episode.njk
 tags: huhero
-date: Created
+date: "2024-08-29"
 title: Szépséges kertek
 datum: 29. 8. 2024
 foto1024: /images/uploads/special_gardens_1024x768.jpg
