@@ -2,7 +2,7 @@
 layout: layouts/non-en-hero-episode.njk
 tags: plhero
 date: "2025-07-15"
-title: Na sportowej emeryturze
+title: Sportowa emerytura
 datum: 15. 7. 2025
 foto1024: /images/uploads/life_of_athletes_after_career_1024x768.jpg
 foto1440: /images/uploads/life_of_athletes_after_career_1440x825.jpg

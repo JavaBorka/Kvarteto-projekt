@@ -10,6 +10,6 @@ alt: a kezek, mint az együttműködés szimbóluma
 link: https://mediaklikk.hu/video/kvartett-2025-06-05-i-adas/
 header: Legújabb epizód
 tv: Duna
-cta: Videó lejátszása
+cta: Videó
 logo: duna_logo_2012.png
 ---

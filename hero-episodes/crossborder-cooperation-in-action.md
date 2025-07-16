@@ -3,7 +3,7 @@ layout: layouts/hero-episode.njk
 tags: hero
 date: "2025-06-28"
 title: Cooperation in action
-datum: 28.06. 2025
+datum: 28. 6. 2025
 foto1024: /images/uploads/crossborder_cooperation_in_action_1024x768.jpg
 foto1440: /images/uploads/crossborder_cooperation_in_action_1440x825.jpg
 alt: HANDS AS A SYMBOL OF COOPERATION
