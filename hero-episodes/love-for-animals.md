@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2025-04-26"
 title: "Love for Animals "
 datum: 26.04. 2025
 foto1024: /images/uploads/love_for_animals_1024x768.jpg

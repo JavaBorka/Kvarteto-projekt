@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2025-05-31"
 title: Life of athletes after their career
 datum: 31.05. 2025
 foto1024: /images/uploads/life_of_athletes_after_career_1024x768.jpg

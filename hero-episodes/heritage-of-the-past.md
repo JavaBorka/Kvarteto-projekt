@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2025-02-22"
 title: Heritage of the Past
 datum: 22.02. 2025
 foto1024: /images/uploads/heritage_of_the_past_1024x768.jpg

@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2025-03-29"
 title: 25 years of Quartet magazine
 datum: 29.03. 2025
 foto1024: /images/uploads/25_years_of_quartet_1024x768.jpg

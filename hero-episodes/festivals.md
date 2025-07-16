@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2024-12-14"
 title: Festivals
 datum: 14.12. 2024
 foto1024: /images/uploads/festivals_1024x768.jpg

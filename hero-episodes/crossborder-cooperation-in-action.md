@@ -1,8 +1,8 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
-title: Crossborder cooperation in action
+date: "2025-06-28"
+title: Crossborder cooperation
 datum: 28.06. 2025
 foto1024: /images/uploads/crossborder_cooperation_in_action_1024x768.jpg
 foto1440: /images/uploads/crossborder_cooperation_in_action_1440x825.jpg

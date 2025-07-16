@@ -1,7 +1,7 @@
 ---
 layout: layouts/hero-episode.njk
 tags: hero
-date: Created
+date: "2024-11-30"
 title: Small towns with unique scenery
 datum: 30.11. 2024
 foto1024: /images/uploads/small_towns_unique_scenery_1024x768.jpg
