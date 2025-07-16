@@ -2,7 +2,7 @@
 layout: layouts/non-en-hero-episode.njk
 tags: czhero
 date: "2025-06-25"
-title: Přeshraniční spolupráce
+title: Spolupráce v akci
 datum: 25. 6. 2025
 foto1024: /images/uploads/crossborder_cooperation_in_action_1024x768.jpg
 foto1440: /images/uploads/crossborder_cooperation_in_action_1440x825.jpg
