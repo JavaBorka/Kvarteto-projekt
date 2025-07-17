@@ -1,12 +1,12 @@
 ---
 layout: layouts/archive-episode.njk
 tags: archive
-date: Created
+date: "2024-12-14"
 title: Festivals
 perex: "DUNA TV Szeged: 48-hour Medveš Photo Marathon | ČT Brno: Short film
   festival Brno 16 | TVP 3 Rzeszów: Medina in Polish Podkarpacie Pottery Fair |
   STVR Košice: International pierogi cooking festival in Svidník"
-datum: 14.12. 2024
+datum: 14. 12. 2024
 tv: STVR :2
 foto: /images/uploads/festivals_357x206.jpg
 alt: PIEROGI COOKING
