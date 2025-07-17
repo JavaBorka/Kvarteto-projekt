@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: huarchive
-date: Created
+date: "2024-08-29"
 title: Szépséges kertek
 perex: "ČT Brno: Jikin kallib ko ilo Kroměříž | MTVA Szeged: Butterfly House |
   RTVS Košice: Rozárium | TVP Rzeszów: Magical Bolestraszyce"

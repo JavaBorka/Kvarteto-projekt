@@ -1,7 +1,7 @@
 ---
 layout: layouts/non-en-archive-episode.njk
 tags: huarchive
-date: Created
+date: "2024-08-01"
 title: Aktívan, időskorban
 perex: ČT Ostrava - Velocipedist Club Ostravából | MTVA Szeged - Sárkányhajók
   Szegeden | STVR Košice - Senior majorettes Kassáról | TVP Kraków - Krakkói
