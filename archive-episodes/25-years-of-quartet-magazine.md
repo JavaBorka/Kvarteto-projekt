@@ -7,7 +7,7 @@ perex: "STVR Košice: It has been 25 years since the first broadcast of the
   Quartet magazine - Slovakia initiative 1999 | ČT Ostrava: Quartet theme song |
   DUNA TV Syeged: Visegrad Seal Festival | TVP 3 Rzeszów: Quartet television
   sharing technology development"
-datum: "29.03. 2025 "
+datum: "29.03. 2025"
 tv: STVR :2
 foto: /images/uploads/25_years_of_quartet_357x206.jpg
 alt: ĽUBA KOĽOVÁ, PIOTR SOCHA, NORA OBRTELOVÁ, ZSUZSA SÁRI
