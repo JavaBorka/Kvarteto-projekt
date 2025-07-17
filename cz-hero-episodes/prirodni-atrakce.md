@@ -3,7 +3,7 @@ layout: layouts/non-en-hero-episode.njk
 tags: czhero
 date: "2024-10-17"
 title: Přírodní atrakce
-datum: 17.10. 2024
+datum: 17. 10. 2024
 foto1024: /images/uploads/natural_attractions_1024x768.jpg
 foto1440: /images/uploads/natural_attractions_1440x825.jpg
 alt: BLEDÓW DESERT
